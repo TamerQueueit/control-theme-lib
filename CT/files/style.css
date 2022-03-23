@@ -1,0 +1,350 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    /*
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    */
+}
+
+/* iframe size */
+
+/*
+#toppanel {
+    width: 100%;
+    height: 100px;
+}
+#toppanel_iframe {
+    width: 100%;
+    height: 100%;
+}
+*/
+
+/* hide default background images - beginning */
+#main .t, #main .b {
+    display: none;
+}
+
+#main .c, .warning-box, .processbar-box, .processbar-box .holder {
+    background-image: none;
+    color: inherit;
+}
+
+#content {
+    color: inherit;
+    font-weight: 400;
+}
+/* hide default background images - end */
+
+/* hide empty containers - beginning */
+.after .warning-box, .after .processbar-box, .error .processbar-box, .exit .processbar-box {
+    display: none;
+}
+/* hide empty containers - end */
+
+#main {
+    width: auto;
+    margin: 0 auto;
+    padding: 15px 0;
+    max-width: 514px;
+}
+
+#main-top {
+    padding: 0 15px;
+}
+
+#main-top-message {
+    text-align: center;
+}
+
+#main .c {
+    width: auto;
+    padding: 0 15px;
+}
+
+#header {
+    padding: 5px 0px 10px 0px;
+    font-weight: 400;
+    color: inherit;
+    border: none;
+}
+
+    #header h2 {
+        font-weight: 600;
+        margin: 15px 0;
+        line-height: 1.4;
+    }
+    #lbHeaderP{
+        
+    }
+
+a {
+    color: inherit;
+}
+
+.warning-box {
+    min-height: 0;
+    border: none;
+    padding: 20px 0;
+    font-weight: 400;
+}
+    .progressbar {
+        height: 26px;
+        margin: 0 auto;
+        background: #ffffff;
+        border: 1px solid #adaeb0;
+        border-radius: 2px;
+        padding: 5px;
+    }
+    .progressbar .progress {
+        height: 100%;
+        text-align: right;
+        width: 0;
+        overflow: hidden;
+        float: left;
+        background-color: #20ac00;
+        background-image: none;
+        position: relative;
+        min-width: 20px;
+    }
+    .progressbar .progress {
+        background-image: none !important;
+        background-color: #85b979;
+        background-image: linear-gradient(90deg,transparent 0px,transparent 11px,#ffffff 11px,#ffffff 13px,transparent 13px,transparent) !important;
+        background-size: 15px;
+        -webkit-background-size: 15px;
+    }
+    .progressbar .progress.updated {
+        animation: slide 2s linear infinite;
+        -webkit-animation: slide 2s linear infinite;
+        background-image: none;
+        background-color: #85b979;
+    }
+    @keyframes slide {
+        from { background-position: 0 0; }
+        to { background-position: 30px 0; }
+    }
+    .progressbar .progress .runner {
+        margin-top: 3px;
+    }
+
+
+#MainPart_lbManualUpdateWarning {
+    margin: 15px 0;
+}
+
+.alert {
+    padding: 8px 15px;
+}
+
+.alert-error {
+    border-color: #b94a48;    
+    color: #b94a48;
+}
+
+.alert-success {
+    border-color: #468847;
+}
+
+.processbar-box {
+    line-height: normal;
+    font-weight: 400;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+    .processbar-box p {
+        margin: 0;
+    }
+
+    .processbar-box .holder {
+        min-height: 0;
+        padding: 20px 0 10px 0;
+        border: none;
+    }
+
+        .processbar-box .holder .larger {
+            min-height: 0;
+            font-size: 18px;
+            padding-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        #MainPart_lbQueueNumber, #MainPart_lbUsersInLineAheadOfYou, #MainPart_lbExpectedServiceTime, #MainPart_lbWhichIsIn{
+            font-weight: bold;
+        }
+        #MainPart_lbQueueNumberText,#MainPart_lbUsersInLineAheadOfYouText,#MainPart_lbExpectedServiceTimeText,#MainPart_lbWhichIsInText{
+
+        }
+    .processbar li {
+        float: left;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+    }
+    .processbar span{
+        float: left;
+        width: 18px;
+        height: 18px;
+        background: none;
+        background-color: #b3b3b3;
+        border-radius: 50%;
+    }
+    .processbar .active span{
+        margin: 0;
+        background-color: #85b979;
+    }
+.time-box {
+    margin: 0 0 20px 0;
+    background-color: #f1f1f1;
+    color: inherit;
+}
+
+    .time-box .frame {
+        min-height: 0;
+        padding: 15px;
+    }
+
+    .time-box h2 {
+        font-weight: 400;
+        color: inherit;
+    }
+
+.reminder-form {
+    margin: 0;
+    min-height: 0;
+    text-align: center;
+}
+
+    .reminder-form form {
+        font-size: 0;
+    }
+
+    .reminder-form h2 {
+        font-weight: 400;
+        color: inherit;
+    }
+
+    .reminder-form .item-input {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+        padding: 9px 15px;
+        color: #4D4D4D;
+        font-family: inherit;
+        font-weight: 400;
+        background: #fff;
+        border: 1px solid #adaeb0;
+        box-sizing: border-box;
+        line-height: normal;
+        font-size: 15px;
+    }
+
+        .reminder-form .item-input:focus {
+            outline: none;
+            font-weight: 400;
+        }
+
+        /*
+        .reminder-form .item-input::-webkit-input-placeholder {
+            color: #8a8b8f;
+        }
+        .reminder-form .item-input::-moz-placeholder {
+            color: #8a8b8f;
+        }
+        .reminder-form .item-input:-ms-input-placeholder {
+            color: #8a8b8f;
+        }
+        .reminder-form .item-input:-moz-placeholder {
+            color: #8a8b8f;
+        }
+        */
+
+    .btn {
+        /* white-space: nowrap;
+        padding: 10px 15px 10px 15px; */
+
+        display: inline-block;
+        margin: auto;
+        font-family: inherit;
+        vertical-align: top;
+        background-color: #85b979;
+        color: #fff;
+        line-height: normal;
+        width: auto;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 0;
+        box-sizing: border-box;
+        }
+
+    .btn:hover {
+        background: none;
+        background-color: #6ea262;
+        box-shadow: none;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+
+    .btn:active {
+        top: 0;
+    }
+
+.block {
+    padding: 0;
+}
+
+    .block a {
+        color: inherit;
+    }
+
+#footer {
+    width: auto;
+    color: inherit;
+    padding: 0;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+#footer-direct-link {
+    padding: 0;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer .by {
+    padding: 0;
+}
+
+@media screen and (max-width:480px) {
+
+    .reminder-form .item-input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    #footer {
+        margin: 0;
+    }
+
+        #footer .by {
+            margin-top: 30px;
+        }
+}
+#MainPart_divExitLine{
+    display: none;
+}

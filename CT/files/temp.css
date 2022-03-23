@@ -1,0 +1,50 @@
+﻿/* temp css - beginning */
+/* Do not upload!!! */
+
+/* Only for testing - show or hide the sections which are otherwise set on the custom layout page */
+
+/* hide iframes - beginning */
+
+#toppanel {
+    display: none;
+}
+
+#leftpanel {
+    display: none;
+}
+
+#middlepanel {
+    display: none;
+}
+
+#rightpanel {
+    display: none;
+}
+
+#sidebar {
+    display: none;
+}
+
+#bottompanel {
+    display: none;
+}
+
+#language-selector {
+    display: none;
+}
+
+/* hide iframes - end */
+
+.logo {
+    /*display: none;*/
+}
+
+    .logo img {
+        content: url(default_images/queue-it_logo.png);
+    }
+
+.reminder-form{
+    /*display: none;*/
+}
+
+/* temp css - end */
